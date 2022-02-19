@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/88facd8bd0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="form.css">
     <title>Form Validation</title>
 </head>
@@ -16,9 +17,43 @@
         <div class="form-control">
             <label>Name</label>
             <input type="text" placeholder="Enter your name" id="username">
-            <i class="fas fa-check-fircle"></i>
+            <i class="fas fa-check-circle"></i>
             <i class="fas fa-exclamation-circle"></i>
-            <small></small>
+            <small>Name can not be blank</small>
+        </div>
+        <div class="form-control">
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email" id="email">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Email incorrect</small>
+        </div>
+        <div class="form-control">
+            <label>Telephone.no</label>
+            <input type="number" placeholder="Enter your phone number" id="ph-number">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Name can not be blank</small>
+        </div>
+        <div class="form-control">
+            <label>Password</label>
+            <input type="text" placeholder="Enter your password" id="password">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Password must be;
+                <ul>
+                    <li>minimum 8</li>
+                    <li>no space</li>
+                    <li>password must be a combination of letters and numbers</li>
+                </ul>
+            </small>
+        </div>
+        <div class="form-control">
+            <label>Age</label>
+            <input type="text" placeholder="Enter your age" id="age">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Age can not be blank</small>
         </div>
     </form>
     </div>
