@@ -1,8 +1,48 @@
+
+
+
+
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
 }
 body{
-    //background-color: black;
+    background: url(pic2.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin:0;
+}
+.container{
+    background-color:rgb(237, 117, 177);
+    border-radius: 5px;
+    overflow: hidden;
+    width:400px;
+    max-width: 100%;
+}
+.header h2{
+    margin:0;
+
+}
+.form{
+    padding:30px 40px;
+
+}
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.form-control label{
+    display: inline-block;
+    margin-bottom:5px;
+}
+.form-control input{
+    border: 2px solid white;
+    border-radius: 4px;
+    display:block;
+    font-size: 14px;
 }
