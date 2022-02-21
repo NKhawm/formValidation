@@ -1,5 +1,5 @@
 
-/*const form= document.getElementById('form');
+const form= document.getElementById('form');
 const username= document.getElementById('username');
 const email= document.getElementById('email');
 const phNumber= document.getElementById('ph-number');
@@ -11,7 +11,7 @@ form.addEventListener('submit',(e)=>{
     checkInputs();
 });
 function checkInputs(){
-    
+    //get the values from the inputs
     const usernameVlue = username.value.trim()
     const emailValue = email.value.trim()
     const phNumberValue = phNumber.value.trim()
@@ -28,15 +28,15 @@ function checkInputs(){
         setSuccessFor(username);
     }
 }
-function setErrorFor(input,message){
+function setErrorFor(input, message){
     const formControl =input.parentElement; //.form-control
     const small = formControl.querySelector('small');
     //add error message inside small
     small.innterText= message;
     //add error class
-    formControl.className = 'form-control error'
+    formControl.className = 'form-control error';
 }
 function setSuccessFor(input){
     const formControl =input.parentElement;
-    formControl.className='form-control sucess';
-}*/
+    formControl.className='form-control success';
+}
