@@ -51,13 +51,12 @@ body{
     padding:10px;
     width: 100%;
 }
-.form-control.sucess input{
-    border-color: $color1;
+.form-control .success input{
+    color: $color1;
+    visibility: visible;
+}
 
-}
-.form-control.error input{
-    border-color: $color2;
-}
+
 
 .form-control i{
     visibility: hidden;
@@ -65,16 +64,7 @@ body{
     top:40px;
     right:10px;
 }
-.form-control.sucess i.fa-check-circle{
-    color:$color1;
-    visibility: visible;
 
-}
-.form-control.error i.fa-exclamation-circle{
-    color:$color2;
-    visibility: visible;
-
-}
 
 
 .form-control small{
@@ -84,10 +74,7 @@ body{
     left:0;
 
 }
-.form-control.error small{
-    color: $color2;
-    visibility: visible;
-}
+
 
 .form button{
     background-color: rgb(205, 2, 103);
