@@ -31,6 +31,7 @@ body {
 
 .header h2 {
   margin: 0;
+  padding: 30px 40px;
 }
 
 .form {
@@ -53,5 +54,56 @@ body {
   border-radius: 4px;
   display: block;
   font-size: 14px;
+  padding: 10px;
+  width: 100%;
+}
+
+.form-control.sucess input {
+  border-color: #2ecc71;
+}
+
+.form-control.error input {
+  border-color: #e74c3c;
+}
+
+.form-control i {
+  visibility: hidden;
+  position: absolute;
+  top: 40px;
+  right: 10px;
+}
+
+.form-control.sucess i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.form-control small {
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.form-control.error small {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.form button {
+  background-color: #cd0267;
+  border: 2px solid black;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  font-family: inherit;
 }
 /*# sourceMappingURL=form.css.map */
