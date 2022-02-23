@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation Form</title>
+    <link rel="stylesheet" href="vform.css">
+    
+</head>
+<body>
+    <div class="contact-us">
+    <h1>Contact Us</h1>
+    <p>We love to hear from you! Send us a message.</p>
+</div>
+<form action="">
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text"name="name" class="" placeholder="Enter your name..">
+        <div class="error-hint hidden">Name can not be blank.</div>
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="text"name="email" class="" placeholder="Enter your email..">
+        <div class="error-hint hidden">Email is invalid.</div>
+    </div>
+
+    <div class="form-group">
+        <label for="name">Phone</label>
+        <input type="text"name="name" class="" placeholder="Enter your phone number..">
+        <div class="error-hint hidden">Name can not be blank.</div>
+    </div>
+
+    <div class="form-group">
+        <label for="age">Age</label>
+        <input type="number"name="name" class="" placeholder="Enter your age..">
+        <div class="error-hint hidden">Name can not be blank.</div>
+    </div>
+
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password"name="password" class="" placeholder="Password here..">
+        <div class="error-hint hidden">Name can not be blank.</div>
+    </div>
+    <hr />
+    <button type="submit">Submit</button>
+</form>
+<div class="thank-you hidden">"Thank you for your message. We will get back to you as soon as possible."</div>
+
+<script  src="vform.js"></script>
+</body>
+</html>
