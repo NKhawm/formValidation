@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two&family=Montserrat:wght@300&family=Poppins:wght@200&family=Redressed&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: url(pic2.jpg);
+  background-size: cover;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 40px;
+  margin-top: 280px;
+  font-family: 'Lobster Two', cursive;
+  margin-right: 20px;
+}
+
+h2 {
+  font-size: 3em;
+  margin-top: 30px;
+  color: #9f6d99;
+}
+
+.sukte {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  border-radius: 200px;
+  position: relative;
+  margin-top: -100px;
+  border: 20px solid;
+  border-color: skyblue hotpink salmon  cadetblue;
+  /*border-bottom: 20px solid #e6fc76 ;
+    border-left:20px solid #da0b73 ;
+    border-top: 20px solid aquamarine;
+    border-right: 20px solid skyblue;*/
+  -webkit-animation: sukte 3s linear;
+          animation: sukte 3s linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.border {
+  background-color: transparent;
+  width: 260px;
+  height: 260px;
+  border-radius: 200px;
+  position: fixed;
+  /*border-bottom: 20px solid #e6fc76 ;
+    border-left:20px solid #da0b73 ;
+    border-top: 20px solid aquamarine;
+    border-right: 20px solid skyblue;*/
+}
+
+h1 {
+  font-size: 4em;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 100px;
+  color: #da0b73;
+}
+
+@-webkit-keyframes sukte {
+  from {
+    -webkit-transform: rotatez(0deg);
+            transform: rotatez(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@keyframes sukte {
+  from {
+    -webkit-transform: rotatez(0deg);
+            transform: rotatez(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+/*# sourceMappingURL=home.css.map */

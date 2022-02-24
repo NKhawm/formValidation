@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Montserrat:wght@300&family=Poppins:wght@200&family=Redressed&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+   background:url(pic2.jpg);
+   background-size: cover;
+}
+.main{
+    display:flex;
+    justify-content: center;
+    gap:40px;
+    margin-top: 280px;
+    font-family: 'Lobster Two', cursive;
+    margin-right:20px ;
+}
+
+h2{
+    font-size: 3em;
+    margin-top: 30px;
+    color:rgb(159, 109, 153);
+}
+.sukte{
+    background-color:transparent;
+    width: 300px;
+    height: 300px;
+    border-radius: 200px;
+    position: relative;
+    //border:30px solid white;
+    margin-top:-100px;
+    border:20px solid ;
+    border-color:skyblue hotpink salmon  cadetblue;
+    /*border-bottom: 20px solid #e6fc76 ;
+    border-left:20px solid #da0b73 ;
+    border-top: 20px solid aquamarine;
+    border-right: 20px solid skyblue;*/
+    animation: sukte 3s linear;
+    animation-iteration-count: infinite;
+    
+}
+.border{
+    background-color:transparent;
+    width: 260px;
+    height: 260px;
+    border-radius: 200px;
+    position: fixed;
+    //border:30px solid white;
+    //margin-top:1px;
+    //margin-left: 2px;
+
+    /*border-bottom: 20px solid #e6fc76 ;
+    border-left:20px solid #da0b73 ;
+    border-top: 20px solid aquamarine;
+    border-right: 20px solid skyblue;*/
+    //animation: sukte 3s linear;
+    
+}
+h1{
+    font-size: 4em;
+    position:absolute;
+    margin-top: 10px;
+    margin-left:100px;
+    color:#da0b73;
+    
+}
+@keyframes sukte{
+    from{
+        transform:rotatez(0deg);
+
+    }
+    to{
+        transform:rotateZ(360deg);
+    }
+}

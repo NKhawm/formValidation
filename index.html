@@ -11,7 +11,7 @@
 <body>
     
     <div class="container">
-        <form  onsubmit="return Validate()"name="vform" >
+        <form method="post" action="home.html" onsubmit="return Validate()"name="vform" >
             <h1>Create Account</h1>
             <div id="username_div">
                 <label for="username">Username</label>
@@ -121,7 +121,7 @@ function Validate(){
     if(password.value ==='' ||password.value != password_confirmation.value ){
         password.style.border = "3px solid red";
         document.getElementById('password_div').style.color='black';
-        password_error.textContent = "password do no match";
+        password_error.textContent = "password does not match";
         password.focus();
         return false;
     }
