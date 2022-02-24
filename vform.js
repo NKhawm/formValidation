@@ -6,7 +6,11 @@ const phoneInput = document.querySelector('input[name="phone"]');
 const ageInput = document.querySelector('input[name="age"]');
 const passwordInput = document.querySelector('input[name="password"]');
 
-let isFormValid = false;
+ 
+ 
+ 
+ 
+ let isFormValid = false;
 
 
 const validateInputs = () => {
@@ -20,7 +24,19 @@ const validateInputs = () => {
         nameInput.nextElementSibling.classList.remove("hidden");
         isFormValid = false;
     }
+    if (!isValidEmail(emailInput.value)){
+        isFormValid = false;
+        
+        invalidateElm(emailInput);
+
+
+    }
 };
+
+
+
+
+
 
 
 
@@ -34,6 +50,20 @@ form.addEventListener("submit",(e) => {
     }
 });
 
-/*nameInput.addEventListener("input",() => {
-    validateInputs();
-});*/
+
+
+
+//ph pattern
+
+ 
+ /*function hello(){
+    const phoneInput = document.querySelector('input[name="phone"]');
+ var patt = /^[0][127][1-9]{9}$/g
+ if(patt.test(phoneInput)){
+     alert('valid')
+ }
+ else{
+     alert('not valid')
+ }
+ }*/
+ 
