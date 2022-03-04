@@ -65,7 +65,7 @@ function Validate(){
     if(password.value ==='' ||password.value != password_confirmation.value ){
         password.style.border = "3px solid red";
         document.getElementById('password_div').style.color='black';
-        password_error.textContent = "password do no match";
+        password_error.textContent = "password does not match";
         password.focus();
         return false;
     }
@@ -92,7 +92,7 @@ function Validate(){
 //Event handler function
 function usernameVerify(){
     if (username !=""){
-        username.style.border = "3px solid #5e6e"
+        username.style.border = "3px solid #2db300"
         name_error.innerHTML="";
         return true;
     }
@@ -101,7 +101,7 @@ function usernameVerify(){
 
 function emailVerify(value){
      if (eValidation.test(email.value)){
-        email.style.border = "3px solid #5e6e"
+        email.style.border = "3px solid #2db300"
         email_error.innerHTML="";
         return true;
     }
@@ -110,7 +110,7 @@ function emailVerify(value){
 
 function ageVerify(){
     if (age !=""){
-        age.style.border = "3px solid #5e6e"
+        age.style.border = "3px solid #2db300"
         age_error.innerHTML="";
         return true;
     }
@@ -120,7 +120,7 @@ function ageVerify(){
 
 function passwordVerify(){
     if (password !="" || password.value.lenght >= 8){
-        password.style.border = "3px solid #5e6e"
+        password.style.border = "3px solid #2db300"
         password_error.innerHTML="";
         return true;
     }
@@ -129,21 +129,21 @@ function passwordVerify(){
 }
 function passwordVerify() {
   if (password.value != "") {
-  	password.style.border = "3px solid #5e6e";
-  	document.getElementById('pass_confirm_div').style.color = "#5e6e66";
-  	document.getElementById('password_div').style.color = "#5e6e66";
+  	password.style.border = "3px solid #2db300";
+  	document.getElementById('pass_confirm_div').style.color = "#ffff4d";
+  	document.getElementById('password_div').style.color = "#ffff4d";
   	password_error.innerHTML = "";
   	return true;
   }
   if (password.value === password_confirmation.value) {
   	password.style.border = "3px solid #5e6e";
-  	document.getElementById('pass_confirm_div').style.color = "#5e6e66";
+  	document.getElementById('pass_confirm_div').style.color = "#ffff4d";
   	password_error.innerHTML = "";
   	return true;
   }
   if (password.value.lenght >= 8){
     password.style.border = "3px solid #5e6e";
-  	document.getElementById('password_div').style.color = "#5e6e66";
+  	document.getElementById('password_div').style.color = "#ffff4d";
   	password_error.innerHTML = "";
   	return true;
 
